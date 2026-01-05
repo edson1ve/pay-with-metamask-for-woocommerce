@@ -1,0 +1,39 @@
+# WordPress
+.htaccess
+wp-config.php
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/
+
+# Plugin specific
+node_modules/
+vendor/
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Build artifacts
+dist/
+build/
+*.zip
+
+# Development
+.env
+.env.local
+.phpunit.result.cache
+
+# Old/backup files
+*-old.*
+*-backup.*
+*.bak
+readme-old.txt
