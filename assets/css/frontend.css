@@ -1,0 +1,218 @@
+/**
+ * GOLDT Frontend Styles
+ *
+ * Frontend styling for checkout and order pages.
+ *
+ * @package GOLDT_Web3_Hybrid_Payments
+ * @since 1.0.0
+ */
+
+/* Payment Container */
+.goldt-payment-container {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.goldt-payment-section {
+    margin-bottom: 20px;
+}
+
+.goldt-payment-section:last-child {
+    margin-bottom: 0;
+}
+
+.goldt-payment-section h4 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* MetaMask Detector */
+.goldt-detector {
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.goldt-loading {
+    display: inline-block;
+    color: #666;
+}
+
+.goldt-success {
+    color: #46b450;
+    font-weight: 500;
+}
+
+.goldt-error {
+    color: #dc3232;
+    font-weight: 500;
+}
+
+.goldt-warning {
+    color: #f0ad4e;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+    padding: 8px;
+    background: #fff8e5;
+    border-left: 3px solid #f0ad4e;
+}
+
+/* Token Selector */
+.goldt-token-selector {
+    margin-bottom: 15px;
+}
+
+.goldt-token-selector label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.goldt-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.goldt-select:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+/* Price Display */
+.goldt-price-display {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.goldt-price-info {
+    color: #333;
+    line-height: 1.6;
+}
+
+.goldt-price-info strong {
+    color: #000;
+}
+
+.goldt-price-info small {
+    color: #666;
+}
+
+/* Pay Button */
+.goldt-pay-button {
+    width: 100%;
+    padding: 12px 20px;
+    background: #f6851b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.goldt-pay-button:hover {
+    background: #e2761b;
+}
+
+.goldt-pay-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Transaction Details */
+.goldt-transaction-details {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.goldt-transaction-details h2 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.goldt-details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.goldt-details-table th,
+.goldt-details-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.goldt-details-table th {
+    font-weight: 600;
+    color: #333;
+    width: 30%;
+}
+
+.goldt-details-table td {
+    color: #666;
+}
+
+.goldt-address,
+.goldt-tx-hash {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    background: #f5f5f5;
+    padding: 4px 8px;
+    border-radius: 3px;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+.goldt-address:hover,
+.goldt-tx-hash:hover {
+    background: #e8e8e8;
+}
+
+.goldt-explorer-link {
+    color: #0073aa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.goldt-explorer-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .goldt-payment-container {
+        padding: 15px;
+    }
+
+    .goldt-details-table th,
+    .goldt-details-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .goldt-details-table th {
+        width: 40%;
+    }
+}
